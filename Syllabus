@@ -1,0 +1,381 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{Principles of Microeconomics (ECO 2023)}
+\author{Instructor: Faisal Awwal}
+\date{Fall 2019}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize Principles of Microeconomics}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+\blankline
+
+\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+E-mail: \texttt{fawwal@fiu.edu} & Instructor Website: \href{www.faisalawwal.com}{\tt\bf www.faisalawwal.com}  \\
+
+ Office Hours: M-F 3-4 pm  &  Class Schedule (Days/Times): MWF/4-4:50pm \\
+
+ Office Location: Viertes Haus (VH) 136 & Class Location: Charles E. Perry (PC) 310 \\
+%  & \\
+% Lab Room: ... & Lab Hours: W 3-5pm \\
+% &  \\
+\hline
+\end{tabular*}
+
+\vspace{5 mm}
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Course Description}
+
+Principles of Microeconomics is an introductory undergraduate course that teaches the fundamentals of microeconomics. At FIU, this is one of the first courses that undergraduates take in economics. For some, it may be the only course they take in the subject, and it provides a solid foundation for economic analysis and thinking that can last throughout their education and subsequent professional careers. For other students, it may provide a foundation for many years of study in economics, business, or related fields.\\
+\newline
+This course begins with the economic foundations and refresher of algebra and use of graphs. Then it introduces the concept of trade-offs, opportunity costs, and comparative advantage, which are the basis to trade. Following, it introduces supply and demand and the basic forces that determine an equilibrium in a market economy as well as the forces that can disrupt economic efficiency. Next, it will introduce a framework for learning about consumer behavior and analyzing consumer decisions. The final section of the course then turns our attention to firms and their decisions about optimal production, and the impact of different market structures on firms' behavior. If time allows, we can cover some of the more advanced topics that can be analyzed using microeconomic theory. These include international trade, the operation of capital markets, and dynamics of labor markets.\\
+\newline
+By the end of the course, you will be able to understand introductory microeconomic theory, solve basic microeconomic problems, and use these techniques to think about things ranging from a number of policy questions relevant to the operation of the real economy to personal questions involving day-to-day decisions.
+
+\section*{Course Goals}
+After completing this course, students should have developed a range of skills enabling them to understand economic concepts and use those concepts to analyze specific questions. By the end of this course, students should be able to:
+\begin{itemize}
+    \item Understand consumer behavior.
+    \item Understand firm behavior.
+    \item Analyze different types of market structures (monopoly, oligopoly and a competitive market).
+    \item Understand how to apply economic principles to a range of policy questions.
+\end{itemize}
+\medskip
+Students should also have the skills needed to:
+\begin{itemize}
+    \item Use supply and demand diagrams to analyze the impact of overall changes in supply and demand on price and quantity.
+    \item Solve a consumer's utility maximization problem mathematically and graphically; analyze the impact of changes in price and income on a consumer's decision via shifting income and substitution effects.
+    \item Solve a firm's cost minimization problem mathematically and graphically.
+    \item Analyze the behavior of firms in a perfectly competitive market in the short-run and the long-run.
+    \item Calculate producer and consumer surplus.
+    \item Analyze the behavior of firms in a monopoly or oligopoly, and calculate the resulting changes in producer or consumer surplus.
+    \item Use economic tools to analyze economic policies.
+\end{itemize}
+
+% Second Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Required Materials}
+
+\begin{itemize}
+\item Microeconomics, 7$^{th}$ edition by Hubbard and O'Brien (ISBN-13: 9780134739458)
+\item Having access to the book is required.
+\item Access to \href{https://www.pearson.com/mylab}{MyLab} is required: \href{https://www.pearson.com/mylab}{https://www.pearson.com/mylab}.
+    \begin{itemize}
+        \item Registration instructions, along with course ID are found \href{https://www.dropbox.com/s/70o3ohxj8xgkrj4/Student_Registration_Handout_awwal97658.pdf?dl=0}{here}.
+    \end{itemize}
+\item Access to \href{https://canvas.fiu.edu/}{Canvas}  is required to view syllabus and exam grades: (\href{https://canvas.fiu.edu/}{https://canvas.fiu.edu/)}
+\item \href{http://attendance.fiu.edu/}{FIU Check-In} (instructions in link) is required for attendance record.
+\item No. 2 pencil is required to complete exams. 
+\item Basic Calculator is optional.
+\begin{itemize}
+    \item Cell phones, wireless devices, and programmable calculators are not allowed on the exams.
+\end{itemize}
+\end{itemize}
+
+\section*{Course Content}
+\begin{itemize}
+    \item Chapter 1: Economics: Foundations and Models
+    \item Chapter 2: Trade-offs, Comparative Advantage, and the Market System
+    \item Chapter 3: Where Prices Come From: The Interaction of Demand and Supply
+    \item Chapter 4: Economic Efficiency, Government Price Setting, and Taxes
+    \item Chapter 6: Elasticity: The Responsiveness of Demand and Supply
+    \item Chapter 10: Consumer Choice and Behavioral Economics
+    \item Chapter 11: Technology, Production, and Costs
+    \item Chapter 12: Firms in Perfectly Competitive Markets
+    \item Chapter 13: Monopolistic Competition: The Competitive Model in a More Realistic Setting
+    \item Chapter 14: Oligopoly: Firms in Less Competitive Markets
+    \item Chapter 15: Monopoly and Antitrust Policy
+\end{itemize}
+
+% Third Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section*{Prerequisites/Corequisites}
+% Prerequisites: MA 116, ... .  Corequisites: ... .
+
+\section*{Important Dates}
+\begin{enumerate}
+    \item Sep 2: Labor Day (no class)
+    \item Sep 3: Last Day to Withdraw w/ Full Refund	
+    \item \textbf{Sep 23: Exam 1}	
+    \item \textbf{October 21: Exam 2}	
+    \item Nov 4: Last Day to withdraw from course w/ a `DR' or `WI' grade	
+    \item Nov 11: Veteran's Day (no class)	
+    \item \textbf{Nov 18: Exam 3}	
+    \item Nov 29: Thanksgiving Break (no class)	
+    \item \textbf{Dec TBD: Exam 4}	
+\end{enumerate}
+
+% Fourth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{How to be successful in this course}
+Successful students:
+\begin{enumerate}
+\item \textbf{Keep up w/ the material} - reading the chapter before class is necessary to understand the material.
+\item \textbf{Are engaged} - attend class, be prepared, ask questions, and seek my help if you are having trouble with the material (see point 6).
+\item \textbf{Complete  HW assignments on time} - your homework is a good preview of exam material and they are worth 30\% of your grade.
+\item \textbf{Read and re-read the syllabus for any questions about the course }- it's a guide created for you to navigate the course successfully. 
+\item \textbf{Check FIU Emails} - I communicate with the class this way concerning updates about the course. You're responsible for the emails I send to you.
+\item \textbf{Consult with me about any issues regarding the course} - I cannot help you if you do not let me know beforehand.
+\end{enumerate}
+
+% Fifth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section*{Course Structure}
+
+% \subsection*{Class Structure}
+
+% \subsection*{Assessments}
+
+% ...
+
+\subsubsection*{Lecture}
+Lecture slides are available on \href{https://canvas.fiu.edu/}{Canvas} and my \href{http://www.faisalawwal.com/teaching/eco-2023-micro/lecture-slides}{website}.
+
+% \subsubsection*{Lab}
+% ...
+
+% \subsubsection*{Final Exam and Class Project}
+
+
+\subsection*{Grading Policy}
+I reserve the right to curve the grading scale contingent upon the overall class performance at the end of the semester. Any curve will only ever make it easier to obtain a certain letter grade. An `Incomplete' (`I') will be given only under exceptional circumstances. Such circumstances like a medical emergency, for example, requires proper documentation in order to receive an `I' grade and subsequently post-semester makeups to finish the course will ensue based on an agreement between the instructor and the student. Doing poorly in the course will not be considered a valid reason for an incomplete grade. Grade assessments and calculation are below:
+\begin{itemize}
+	\item \underline{\textbf{60\%}} of your grade will be determined by 4 non-cumulative exams: 25\% for the highest exam score, 20\% for the 2$^{nd}$ highest exam score, 15\% for the 3$^{rd}$ highest exam score), and the lowest exam score will be excluded from final grade.
+	\item \underline{\textbf{30\%}} of your grade will be determined by MyLab homework. HW assignments will be assigned periodically throughout the semester and will be due at professor's discretion (usually one week from the date it is assigned). A \underline{maximum of two (2) attempts} per homework are allowed and only the highest score will count. Past due assignments will have 10 percentage points deducted from your score for each day it is late.
+	\item \underline{\textbf{10\%}} of your grade will be determined by class attendance and participation (5\% each).
+\end{itemize}
+\medskip
+\centering \textit{Final Grade = (Highest Exam Score * 0.25) + (2$^{nd}$ Highest Exam Score * 0.20) + (3$^{rd}$ Highest Exam Score * 0.15) + (Homework Average * 0.30) + (Class Attendance * 0.05) + (Class Participation * 0.05)}
+
+% Table generated by Excel2LaTeX from sheet 'Sheet1'
+\begin{table}[htbp]
+  \centering
+  \caption{Grading Scale}
+    \begin{tabular}{cccccc}
+    \textbf{Letter} & \textbf{Range} & \textbf{Letter} & \textbf{Range} & \textbf{Letter} & \textbf{Range} \\
+    A     & 90.00 or above & B     & 79.00- 83.99 & C     & 67.00 - 72.99 \\
+    A-    & 87.00 - 89.99 & B-    & 76.00- 78.99 & D     & 55.00 - 66.99 \\
+    B+    & 84.00 - 86.99 & C+    & 73.00 - 75.99 & F     & Below 55.00 \\
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+
+\section*{Available Support Services}
+\begin{itemize}
+    \item Tutoring services are available at the Economics Tutoring Lab in VH 136 on M-F from 9 am - 5 pm. 
+    \item There are great video tutorials on economics subjects on \href{https://www.khanacademy.org/}{Khan Academy} as well as \href{http://www.youtube.com/}{YouTube}.
+    \item Practice problems on MyLab as well as \href{https://www.aadecon.com/classes/econ1010/}{problems} from Dr. David Aadland at University of Wyoming.
+\end{itemize}
+
+
+% Add a figure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{figure*}
+% \includegraphics[width=1.3\textwidth,angle=90]{Concept_map_315.pdf}
+% \end{figure*}
+
+% Fifth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newpage
+\section*{Course Policies}
+\subsection*{Attendance}
+Class attendance is required and will be taken with FIU Check-In. You need to download \href{http://attendance.fiu.edu/}{FIU Check-In} (instructions in link).  I reserve the right to withdraw you from the class without prior notice if you have \underline{\textbf{three or more unexcused absences consecutively}}. Make sure to communicate with me if you know well in advance that you will be absent from class, be tardy to class, or leave class early.
+\subsection*{Tardiness}
+Be sure to arrive to class on time. If I notice that you come to class late frequently, I will mark you absent for the day.
+\subsection*{Cell Phones}
+Please silence your cellular phones during my lecture. If you need to use your phone, then quietly exit the classroom.
+\subsection*{Email Etiquette}
+Please be sure to address all emails to me with an appropriate subject in the subject header as well as proper salutation in the beginning of the text. Professionalism is an absolute must at this stage of your lives.
+\subsection*{Academic Dishonesty}
+Students are required to comply with the F.I.U. university policy on academic integrity found in the \href{http://integrity.fiu.edu/misconducts.html}{Academic Misconduct}. I have a \underline{\textbf{zero}} tolerance for cheating and/or plagiarism. If I catch you cheating on exams or plagiarizing written material, then you will be subjected to the penalties established by FIU regarding that behavior, which may include but not limited to failing the course. 
+\subsection*{Makeup Exams Policy}
+No makeup exams. You can use your missed exam as a drop from your overall exam score.
+\subsection*{Accommodations for Students w/ Disabilities }
+Reasonable accommodations will be made for students with verifiable disabilities. In order to take advantage of available accommodations, students must register at \href{http://studentaffairs.fiu.edu/get-support/disability-resource-center/}{Disability Services Office}. Discrimination based on race, color, religion, creed, sex, national origin, age, disability, veteran status, or sexual orientation is a violation of state and federal law and/or Florida International University policy and will not be tolerated.
+\bigskip
+
+\textbf{Please Note: Syllabus is tentative and subject to change at Instructor's discretion.}
+
+% \subsection*{During Class}
+% \footnotesize{I understand that the electronic recording of notes will be important for class and so computers will be allowed in class. Please refrain from using computers for anything but activities related to the class. Phones are prohibited as they are rarely useful for anything in the course. Eating and drinking are allowed in class but please refrain from it affecting the course. Try not to eat your lunch in class as the classes are typically active.}
+
+% \subsection*{Attendance Policy}
+% \footnotesize{For complete attendance and excused absence policies, please see http://policies.ncsu.edu/regulation/reg-02-20-03. Attendance is expected in all lecture and lab sections. Valid excuses for absence will be accepted before class. In extenuating circumstances, valid excuses with proof will be accepted after class. For every class missed the participation grade will be dropped 1 point.}
+
+% \subsection*{Policies on Incomplete Grades and Late Assignments}
+% \footnotesize{If an extended deadline is not authorized by the instructor or department, an unfinished incomplete grade will automatically change to an F after either (a) the end of the next regular semester in which the student is enrolled (not including summer sessions), or (b) the end of 12 months if the student is not enrolled, whichever is shorter. Incompletes that change to F will count as an attempted course on transcripts. The burden of fulfilling an incomplete grade is the responsibility of the student. The university policy on incomplete grades is located at http://policies.ncsu.edu/regulation/reg-02-50-3.}
+
+% \footnotesize{Late assignments will be accepted for no penalty if a valid excuse is communicated to the instructor before the deadline. After the deadline, assignments will be accepted for a 50\% deduction to the score up to 2 days after the deadline. After this any assignments handed in will be given 0.}
+
+% \subsection*{Academic Integrity and Honesty}
+% \footnotesize{Students are required to comply with the university policy on academic integrity found in the Code of Student Conduct found at http://policies.ncsu.edu/policy/pol-11-35-01. Don't cheat. Don't be that guy. Yes, you. You know exactly what I'm talking about. See http://policies.ncsu.edu/policy/pol-11-35-01 for a detailed explanation of academic honesty.}
+
+% \subsection*{Accommodations for Disabilities}
+% \footnotesize{Reasonable accommodations will be made for students with verifiable disabilities. In order to take advantage of available accommodations, students must register with the Disability Services Office at Suite 2221, Student Health Center, Campus Box 7509, 919-515-7653. For more information on NC State's policy on working with students with disabilities, please see the Academic Accommodations for Students with Disabilities Regulation (REG02.20.01) (https://policies.ncsu.edu/regulation/reg-02-20-01/).
+% Non-Discrimination Policy NC State University provides equality of opportunity in education and employment for all students and employees. Accordingly, NC State affirms its commitment to maintain a work environment for all employees and an academic environment for all students that is free from all forms of discrimination.}
+
+% \footnotesize{Discrimination based on race, color, religion, creed, sex, national origin, age, disability, veteran status, or sexual orientation is a violation of state and federal law and/or NC State University policy and will not be tolerated. Harassment of any person (either in the form of quid pro quo or creation of a hostile environment) based on race, color, religion, creed, sex, national origin, age, disability, veteran status, or sexual orientation also is a violation of state and federal law and/or NC State University policy and will not be tolerated. Retaliation against any person who complains about discrimination is also prohibited. NC State's policies and regulations covering discrimination, harassment, and retaliation may be accessed at \href{http://policies.ncsu.edu/policy/pol-04-25-05} or  \href{http://www.ncsu.edu/equal_op/}. Any person who feels that he or she has been the subject of prohibited discrimination, harassment, or retaliation should contact the Office for Equal Opportunity (OEO) at 919-515-3148.}
+
+% % Course Schedule %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newpage
+% \section*{Schedule and weekly learning goals}
+
+% The schedule is tentative and subject to change. The learning goals below should be viewed as the key concepts you should grasp after each week, and also as a study guide before each exam, and at the end of the semester. Each exam will test on the material that was taught up until 1 week prior to the exam (i.e. vorticity will not be tested until exam 2). The applications in the second half of the semester tend to build on the concepts in the first half of the semester though, so it is still important to at least review those concepts throughout the semester.
+
+% % Set first date of the semester (for some reason this is a week before what comes up, but that's easy to get around)
+% \SetDate[01/01/2018]
+% \week{Week 01} Topic 1
+% \begin{itemize}
+% \item Goal 1
+% \item Goal 2
+% \item Goal 3
+% \end{itemize}
+
+% \week{Week 02} Topic 2
+% \begin{itemize}
+% \item Goals ...
+% \end{itemize}
+
+% \week{Week 03} Topic 3
+% \begin{itemize}
+% \item Goals ...
+% \end{itemize}
+
+% \week{Week 04} ...
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 05} ...
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 06} ...
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 07} ...
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 08} ... and \textbf{Exam 1}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 09} Spring Break
+
+% \week{Week 10} ...
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+% \week{Week 11} ...
+% \begin{itemize}
+% \item ...
+% \end{itemize}
+
+% \week{Week 12} ...
+% \begin{itemize}
+% \item ...
+% \end{itemize}
+
+% \week{Week 13} ...
+% \begin{itemize}
+% \item ...
+% \end{itemize}
+
+% \week{Week 14} ...
+% \begin{itemize}
+% \item ...
+% \end{itemize}
+
+% \week{Week 15} ... and  \textbf{Exam 2}
+
+% \week{Week 16} ...
+
+% \week{Week 17} \textbf{Final Exam}
+
+\end{document}
+
+
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
